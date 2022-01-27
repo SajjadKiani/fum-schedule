@@ -1,4 +1,3 @@
-import {Card} from "react-bootstrap";
 import React, {useState} from "react";
 
 import './style.css'
@@ -23,7 +22,7 @@ export default function MyCard ({data , handleCardClick}) {
         handleCardClick(data)
     }
 
-    return <div className={'border border-primary p-1 rounded-2'}>
+    return <div className={'border border-primary p-1 rounded-2 text-end'}>
             <p>{data['نام درس']}</p>
             {state && <li>{state}</li>}
             <li id={'card'}> واحد: {data["واحد"]}</li>

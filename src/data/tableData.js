@@ -1,5 +1,3 @@
-import MyCard from "../components/card";
-
 const TableData = []
 
 for (let i = 0; i < 6; i++) {

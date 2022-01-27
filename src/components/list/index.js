@@ -27,7 +27,7 @@ export default function List ({data , onClick}) {
     return (
         <div className={''}>
 
-            <input ref={inputRef} type={'text'} onChange={handleSearch} className={'mb-3 form-control'} placeholder={'جستجو نام درس'} />
+            <input ref={inputRef} type={'text'} onChange={handleSearch} className={'mb-3 form-control'} placeholder={'جستجو نام درس 🔍'} />
 
             <div className={'p-2 border rounded-3 navbar-nav-scroll text-center min-vh-100'}>
 

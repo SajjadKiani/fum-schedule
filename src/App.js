@@ -6,6 +6,7 @@ import MyCard from "./components/card";
 import {Data} from "./data";
 import {TableData} from "./data/tableData";
 import { useState} from "react";
+import {Link} from "react-router-dom";
 
 
 function App() {
@@ -35,6 +36,10 @@ function App() {
           <Row dir={'rtl'} className={'mt-5 align-items-center'}>
               <Col className={'col-9'}>
                   <MyTable  data={tableData} />
+                  <p className={'mb-2 text-muted'}>©️ کپی رایت 2022 - سجاد کیانی مقدم -
+                      <a href={'https://github.com/SajjadKiani/fum-schedule'} id={'repository'}>آدرس مخزن</a>
+                  </p>
+
               </Col>
               <Col className={'vh-100 col-3'}>
                   <List data={Data} onClick={handleListClick} />

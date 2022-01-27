@@ -8,7 +8,7 @@ export default function MyTable ({data}) {
     return (
         <div className={'table-responsive-sm '}>
             { error && <Alert variant={"danger"} >خطا</Alert> }
-            <Table dir={'rtl'} className={'vh-100'}  bordered hover>
+            <Table dir={'rtl'} className={'vh-100 text-center'}  bordered hover>
                 <thead>
                 <tr>
                     <th>#</th>
