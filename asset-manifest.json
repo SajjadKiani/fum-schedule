@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/fum-schedule/static/css/main.1a8a0596.css",
+    "main.js": "/fum-schedule/static/js/main.d4568ce6.js",
+    "index.html": "/fum-schedule/index.html",
+    "main.1a8a0596.css.map": "/fum-schedule/static/css/main.1a8a0596.css.map",
+    "main.d4568ce6.js.map": "/fum-schedule/static/js/main.d4568ce6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1a8a0596.css",
+    "static/js/main.d4568ce6.js"
+  ]
+}
