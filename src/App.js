@@ -12,17 +12,26 @@ function App() {
 
     const [tableData , setTableData] = useState(TableData)
 
+    const handleCardClick = (data) => {
+        setTableData(prev => prev.map((d) =>
+            (d[0] === data.date[0][0] ? {...d,[data.time[0]]: '' } :
+                d[0] === data.date[1][0] ? {...d,[data.time[1]]: '' } : {...d})
+        ))
+    }
+
     const handleListClick = (data) => {
         setTableData(prev => prev.map((d) =>
-            (d[0] === data.date[0][0] ? {...d,[data.time[0]]: <MyCard data={data} /> } :
-                d[0] === data.date[1][0] ? {...d,[data.time[1]]: <MyCard data={data} /> } : {...d})
+            (d[0] === data.date[0][0] ? {...d,[data.time[0]]: <MyCard data={data} handleCardClick={handleCardClick} /> } :
+                d[0] === data.date[1][0] ? {...d,[data.time[1]]: <MyCard data={data} handleCardClick={handleCardClick} /> } : {...d})
         ))
 
     }
 
+
+
   return (
       <Container className={'vh-100'}>
-          <h1 className={'display-1 text-center'}>fum Schedule <span className={'text-muted'}> Computer Science 💻 </span></h1>
+          <h5 className={'display-5 text-center'}>fum Schedule <span className={'text-muted'}> Computer Science 💻 </span></h5>
           <Row dir={'rtl'} className={'mt-5 align-items-center'}>
               <Col className={'col-9'}>
                   <MyTable  data={tableData} />

@@ -1,10 +1,13 @@
-import {Table} from "react-bootstrap";
+import {Alert, Table} from "react-bootstrap";
+import {useState} from "react";
 
 export default function MyTable ({data}) {
 
+    const [error , setError] = useState("")
 
     return (
-        <div className={'table-responsive-sm'}>
+        <div className={'table-responsive-sm '}>
+            { error && <Alert variant={"danger"} >خطا</Alert> }
             <Table dir={'rtl'} className={'vh-100'}  bordered hover>
                 <thead>
                 <tr>
