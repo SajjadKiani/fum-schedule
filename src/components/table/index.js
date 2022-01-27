@@ -22,12 +22,12 @@ export default function MyTable ({data}) {
                     data.map((d,i) => {
                         return <tr key={i}>
                             <th >{d[0]}</th>
-                            <td className={'col-2'}>{d[1]}</td>
-                            <td className={'col-2'}>{d[2]}</td>
-                            <td className={'col-2'}>{d[3]}</td>
-                            <td className={'col-2'}>{d[4]}</td>
-                            <td className={'col-2'}>{d[5]}</td>
-                            <td className={'col-2'}>{d[6]}</td>
+                            <td className={'col-2'}>{d[8]}</td>
+                            <td className={'col-2'}>{d[10]}</td>
+                            <td className={'col-2'}>{d[12]}</td>
+                            <td className={'col-2'}>{d[14]}</td>
+                            <td className={'col-2'}>{d[16]}</td>
+                            <td className={'col-2'}>{d[18]}</td>
                         </tr>
                     })
 
