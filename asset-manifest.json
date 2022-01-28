@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/fum-schedule/static/css/main.3f649e80.css",
-    "main.js": "/fum-schedule/static/js/main.03609d68.js",
+    "main.css": "/fum-schedule/static/css/main.6db0c178.css",
+    "main.js": "/fum-schedule/static/js/main.1604a855.js",
     "index.html": "/fum-schedule/index.html",
-    "main.3f649e80.css.map": "/fum-schedule/static/css/main.3f649e80.css.map",
-    "main.03609d68.js.map": "/fum-schedule/static/js/main.03609d68.js.map"
+    "main.6db0c178.css.map": "/fum-schedule/static/css/main.6db0c178.css.map",
+    "main.1604a855.js.map": "/fum-schedule/static/js/main.1604a855.js.map"
   },
   "entrypoints": [
-    "static/css/main.3f649e80.css",
-    "static/js/main.03609d68.js"
+    "static/css/main.6db0c178.css",
+    "static/js/main.1604a855.js"
   ]
 }
