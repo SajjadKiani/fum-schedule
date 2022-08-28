@@ -1,5 +1,10 @@
+@font-face {
+    font-family: vazirmatn;
+    src: url(./statics/Vazirmatn-Regular.ttf);
+  }
+
 #root {
-    font-family: "B Yekan";
+    font-family: "vazirmatn";
 }
 
 a#repository {
