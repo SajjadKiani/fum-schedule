@@ -22,8 +22,8 @@ function App() {
 
     const handleListClick = (data) => {
         setTableData(prev => prev.map((d) =>
-            (d[0] === data.date[0][0] ? {...d,[data.time[0]]: <MyCard data={data} handleCardClick={handleCardClick} /> } :
-                d[0] === data.date[1][0] ? {...d,[data.time[1]]: <MyCard data={data} handleCardClick={handleCardClick} /> } : {...d})
+            (d[0] === data.date[0][0] ? {...d,[data.time[0]]: <MyCard data={data} handleCardClick={handleCardClick} even={data.date[0][1]} /> } :
+                d[0] === data.date[1][0] ? {...d,[data.time[1]]: <MyCard data={data} handleCardClick={handleCardClick} even={data.date[1][1]} /> } : {...d})
         ))
 
     }
@@ -34,10 +34,10 @@ function App() {
       <div className={'d-flex flex-column vh-100'}>
         <h5 className={'display-5 text-center'}>fum Schedule <span className={'text-muted'}> Computer Science 💻 </span></h5>
         <div className="d-flex m-1 gap-1">
-            <div className={'col-3 vh-100'} dir="rtl">
+            <div className={'col-2 vh-100'} dir="rtl">
                 <List data={Data} onClick={handleListClick} />
             </div>
-            <div className={'col-9 vh-100'} >
+            <div className={'col-10 vh-100'} >
                 <MyTable  data={tableData} />
             </div>
         </div>

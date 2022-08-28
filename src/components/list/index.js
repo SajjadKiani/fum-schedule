@@ -39,8 +39,10 @@ export default function List ({data , onClick}) {
                                     <Card.Subtitle className="mb-2 text-muted">{d["نام استاد"]}</Card.Subtitle>
 
                                     <Card.Text className={'mt-3 text-end'}>
-                                        <li>روز: {d['date'].join(' ')}</li>
-                                        <li>ساعت: {d['time'].join(' , ')}</li>
+                                        {/* <li>روز: {d['date'].join(' ')}</li> */}
+                                        {d['date'][0] && <li> { d['date'][0][0]} , {d['time'][0]} , <span className="text-warning"> {d['date'][0][1].replace('ZOJ','زوج').replace('FARD','فرد')} </span></li>}
+                                        {d['date'][1] && <li> { d['date'][1][0]} , {d['time'][1]} , <span className="text-warning"> {d['date'][1][1].replace('ZOJ','زوج').replace('FARD','فرد')} </span> </li> }
+                                        {/* <li>ساعت: {d['time'].join(' , ')}</li> */}
                                     </Card.Text>
                                     <Accordion>
                                         <Accordion.Item eventKey="0" className={'border-0'}>
