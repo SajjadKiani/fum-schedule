@@ -6,9 +6,9 @@ export default function MyTable ({data}) {
     const [error , setError] = useState("")
 
     return (
-        <div className={'table-responsive-sm '}>
+        <div className={'table-responsive-sm h-100'}>
             { error && <Alert variant={"danger"} >خطا</Alert> }
-            <Table dir={'rtl'} className={'vh-100 text-center'}  bordered hover>
+            <Table dir={'rtl'} className={'h-100 text-center'}  bordered hover>
                 <thead>
                 <tr>
                     <th>#</th>

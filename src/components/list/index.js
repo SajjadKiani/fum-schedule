@@ -25,11 +25,11 @@ export default function List ({data , onClick}) {
     }
 
     return (
-        <div className={''}>
+        <>
 
-            <input ref={inputRef} type={'text'} onChange={handleSearch} className={'mb-3 form-control'} placeholder={'جستجو نام درس 🔍'} />
+            <div><input ref={inputRef} type={'text'} onChange={handleSearch} className={'mb-3 form-control'} placeholder={'جستجو نام درس 🔍'} /></div>
 
-            <div className={'p-2 border rounded-3 navbar-nav-scroll text-center min-vh-100'}>
+            <div id="list" className={'p-2 border rounded-3 navbar-nav-scroll text-center'}>
 
             {
                 list.map((d,i) => {
@@ -64,6 +64,6 @@ export default function List ({data , onClick}) {
                 })
             }
             </div>
-        </div>
+        </>
     )
 }

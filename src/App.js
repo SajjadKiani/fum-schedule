@@ -31,21 +31,20 @@ function App() {
 
 
   return (
-      <Container className={'vh-100'}>
-          <h5 className={'display-5 text-center'}>fum Schedule <span className={'text-muted'}> Computer Science 💻 </span></h5>
-          <Row dir={'rtl'} className={'mt-5 align-items-center'}>
-              <Col className={'col-9'}>
-                  <MyTable  data={tableData} />
-                  <p className={'mb-2 text-muted'}>©️ کپی رایت 2022 - سجاد کیانی مقدم -
-                      <a href={'https://github.com/SajjadKiani/fum-schedule'} id={'repository'}>آدرس مخزن</a>
-                  </p>
-
-              </Col>
-              <Col className={'vh-100 col-3'}>
-                  <List data={Data} onClick={handleListClick} />
-              </Col>
-          </Row>
-      </Container>
+      <div className={'d-flex flex-column vh-100'}>
+        <h5 className={'display-5 text-center'}>fum Schedule <span className={'text-muted'}> Computer Science 💻 </span></h5>
+        <div className="d-flex m-1 gap-1">
+            <div className={'col-3 vh-100'} dir="rtl">
+                <List data={Data} onClick={handleListClick} />
+            </div>
+            <div className={'col-9 vh-100'} >
+                <MyTable  data={tableData} />
+            </div>
+        </div>
+        <p className={'mb-2 text-muted text-end'}>©️ کپی رایت 2022 - سجاد کیانی مقدم -
+            <a href={'https://github.com/SajjadKiani/fum-schedule'} id={'repository'}>آدرس مخزن</a>
+        </p>
+      </div>
   );
 }
 
