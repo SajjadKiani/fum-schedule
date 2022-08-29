@@ -13,7 +13,7 @@ import MyToast from "./components/toast";
 function App() {
 
     const [show, setShow] = useState(false);
-    const [message , setMessage] = useState('')
+    const [messages , setMessages] = useState([])
     const [tableData , setTableData] = useState(TableData)
 
     const handleCardClick = (data) => {
@@ -25,12 +25,12 @@ function App() {
 
     const alert = (tabled , data , day) => {
         setShow(true)
-        setMessage (`
+        setMessages (prev => [...prev,`
             درس: ${data['نام درس']},
             روز: ${day},
             با درس: ${tabled.props.data['نام درس']},
             تداخل دارد.
-        `)
+        `])
     }
 
     const handleListClick = (data) => {
@@ -65,7 +65,7 @@ function App() {
         <p className={'mb-2 text-muted text-end'}>©️ کپی رایت 2022 - سجاد کیانی مقدم -
             <a href={'https://github.com/SajjadKiani/fum-schedule'} id={'repository'}>آدرس مخزن</a>
         </p>
-        <MyToast show={show} setShow={setShow} message={message}  />
+        <MyToast show={show} setShow={setShow} messages={messages}  />
       </div>
   );
 }
