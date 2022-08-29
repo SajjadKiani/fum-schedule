@@ -7,10 +7,12 @@ import {Data} from "./data";
 import {TableData} from "./data/tableData";
 import { useState} from "react";
 import {Link} from "react-router-dom";
+import MyToast from "./components/toast";
 
 
 function App() {
 
+    const [show, setShow] = useState(true);
     const [tableData , setTableData] = useState(TableData)
 
     const handleCardClick = (data) => {
@@ -44,6 +46,7 @@ function App() {
         <p className={'mb-2 text-muted text-end'}>©️ کپی رایت 2022 - سجاد کیانی مقدم -
             <a href={'https://github.com/SajjadKiani/fum-schedule'} id={'repository'}>آدرس مخزن</a>
         </p>
+        <MyToast show={show} setShow={setShow} message={'nice'}  />
       </div>
   );
 }
