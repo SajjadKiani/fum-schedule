@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/fum-schedule/static/css/main.b66f6ed0.css",
-    "main.js": "/fum-schedule/static/js/main.6d8b66ab.js",
+    "main.js": "/fum-schedule/static/js/main.6a3815ce.js",
     "static/media/Vazirmatn-Regular.ttf": "/fum-schedule/static/media/Vazirmatn-Regular.333a1b2bdd2755ccda1a.ttf",
     "index.html": "/fum-schedule/index.html",
     "main.b66f6ed0.css.map": "/fum-schedule/static/css/main.b66f6ed0.css.map",
-    "main.6d8b66ab.js.map": "/fum-schedule/static/js/main.6d8b66ab.js.map"
+    "main.6a3815ce.js.map": "/fum-schedule/static/js/main.6a3815ce.js.map"
   },
   "entrypoints": [
     "static/css/main.b66f6ed0.css",
-    "static/js/main.6d8b66ab.js"
+    "static/js/main.6a3815ce.js"
   ]
 }
